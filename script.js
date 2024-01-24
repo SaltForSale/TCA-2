@@ -1,31 +1,41 @@
-//wait for doc to get ready before making call
-
+// Wait for the document to be ready before making call
 $(document).ready(function () {
-    //mae a get request to be ready before making call
+    // Make a GET request to the JSON API using jQuery's .getJSON method
     $.getJSON("schedule.json", function (data) {
-        //store schedule data to local variable
+        // Store the schedule data in a global variable
         let scheduleData = data.schedule;
 
-        //populate table
+        // Populate the table with all the schedule data
         populateTable(scheduleData);
 
+        //Listen for changes to the dropDown Menu
+        $("#daySelectorID").on("change", function() {
+            //get selected day
+            let selectedDay = $(this).val();
+            //filter schedule data based on the selected day
+            let filteredData = scheduleData.filter( function(schedule) {
+                return selectedDay === "all" || schedule.days.includes(selectedDay)
+            })
+            populateTable(filteredData)
+        })
     });
-    //function to do what it says :P
+    // Function to populate the table with schedule data
     function populateTable(scheduleData) {
-        $("#schedule-table-body").empty();
-
+        $('#schedule-table-body').empty();
+        // Iterate over each object in the scheduleData array
         $.each(scheduleData, function (i, schedule) {
             let row = "<tr>";
-            row += "<td>" + schedule.class_name + "</td>";
-            row += "<td>" + schedule.teacher_name + "</td>";
-            row += "<td>" + schedule.room_number + "</td>";
-            row += "<td>" + schedule.days.join(', ') + "</td>";
-            row += "</tr>";
-
+            // Add the class name, teacher name, room number, and days to the row
+            row += '<td>' + schedule.class_name + '</td>'
+            row += '<td>' + schedule.teacher_name + '</td>'
+            row += '<td>' + schedule.room_number + '</td>'
+            row += '<td>' + schedule.days.join(', ') + '</td>'
+            row += '</tr>'
+            // Append the new row to the table body
             $('#schedule-table-body').append(row)
         })
 
-    }
-}
 
-)
+    }
+
+})

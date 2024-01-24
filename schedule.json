@@ -6,7 +6,7 @@
                 "Wednesday",
                 "Friday"
             ],
-            "class_name": "Cybersecurity",
+            "class_name": "Cyber Security",
             "room_number": "E202",
             "teacher_name": "Ms. Rehwinkel"
         },
@@ -22,8 +22,7 @@
         },
         {
             "days": [
-                "Monday",
-                "Tuesday",
+                "Monday, Tuesday",
                 "Wednesday",
                 "Thursday",
                 "Friday"
@@ -31,6 +30,17 @@
             "class_name": "Web Design",
             "room_number": "B110",
             "teacher_name": "Ms. Leonard"
+        },
+        {
+            "days": [
+                "Monday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "class_name": "Cooking",
+            "room_number": "C101",
+            "teacher_name": "Ms. Smith"
         }
     ]
 }
