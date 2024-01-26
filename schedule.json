@@ -2,45 +2,185 @@
     "schedule": [
         {
             "days": [
-                "Monday",
-                "Wednesday",
-                "Friday"
+                "A",
+                "B",
+                "C",
+                "E",
+                "F"
             ],
-            "class_name": "Cyber Security",
-            "room_number": "E202",
-            "teacher_name": "Ms. Rehwinkel"
+            "class_name": "Computer Science A",
+            "wing": "A",
+            "teacher_name": "Ms. Rehwinkel",
+            "student": "Evan"
         },
         {
             "days": [
-                "Tuesday",
-                "Wednesday",
-                "Thursday"
+                "A",
+                "B",
+                "D",
+                "E",
+                "F"
             ],
-            "class_name": "Biology",
-            "room_number": "D201",
-            "teacher_name": "Ms. Tsakiris"
+            "class_name": "Calculus AB",
+            "wing": "E",
+            "teacher_name": "Ms. Daley",
+            "student": "Evan"
         },
         {
             "days": [
-                "Monday, Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
+                "A",
+                "C",
+                "D",
+                "E",
+                "G"
+            ],
+            "class_name": "Fine Art / Applied Art",
+            "wing": "D",
+            "teacher_name": "Ms. Fraser",
+            "student": "Evan"
+        },
+        {
+            "days": [
+                "B",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "class_name": "Physical Ed / Health",
+            "wing": "C",
+            "teacher_name": "Ms. Scollo",
+            "student": "Evan"
+        },
+        {
+            "days": [
+                "A",
+                "B",
+                "D",
+                "E",
+                "G"
+            ],
+            "class_name": "Cybersecurity",
+            "wing": "A",
+            "teacher_name": "Ms. Rehwinkel",
+            "student": "Evan"
+        },
+        {
+            "days": [
+                "A",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "class_name": "BCC English",
+            "wing": "E",
+            "teacher_name": "Mr. Sauter",
+            "student": "Evan"
+        },
+        {
+            "days": [
+                "B",
+                "C",
+                "E",
+                "F",
+                "G"
             ],
             "class_name": "Web Design",
-            "room_number": "B110",
-            "teacher_name": "Ms. Leonard"
+            "wing": "B",
+            "teacher_name": "Mr. Kilgore",
+            "student": "Evan"
         },
         {
             "days": [
-                "Monday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
+                "A",
+                "B",
+                "D",
+                "E",
+                "G"
             ],
-            "class_name": "Cooking",
-            "room_number": "C101",
-            "teacher_name": "Ms. Smith"
+            "class_name": "Cyber Security",
+            "wing": "A",
+            "teacher_name": "Ms. Rehwinkel",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "A",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "class_name": "Marine Science",
+            "wing": "D",
+            "teacher_name": "Ms. Tsakiris",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "B",
+                "C",
+                "E",
+                "F",
+                "G"
+            ],
+            "class_name": "Web Design",
+            "wing": "B",
+            "teacher_name": "Mr. Kilgore",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "A",
+                "C",
+                "D",
+                "E",
+                "G"
+            ],
+            "class_name": "Math",
+            "wing": "E",
+            "teacher_name": "Mr. Mara",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "A",
+                "B",
+                "D",
+                "E",
+                "F"
+            ],
+            "class_name": "English",
+            "wing": "E",
+            "teacher_name": "Ms. Tutela",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "A",
+                "B",
+                "C",
+                "E",
+                "F"
+            ],
+            "class_name": "Health/Gym",
+            "wing": "C",
+            "teacher_name": "Mr. Scalzo",
+            "student": "Tyler"
+        },
+        {
+            "days": [
+                "B",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "class_name": "Computer Science",
+            "wing": "B",
+            "teacher_name": "Ms. Leonard",
+            "student": "Tyler"
         }
     ]
 }

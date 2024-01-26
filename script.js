@@ -9,12 +9,32 @@ $(document).ready(function () {
         populateTable(scheduleData);
 
         //Listen for changes to the dropDown Menu
-        $("#daySelectorID").on("change", function() {
+        $("#day-selector").on("change", function () {
             //get selected day
             let selectedDay = $(this).val();
             //filter schedule data based on the selected day
-            let filteredData = scheduleData.filter( function(schedule) {
+            let filteredData = scheduleData.filter(function (schedule) {
                 return selectedDay === "all" || schedule.days.includes(selectedDay)
+            })
+            populateTable(filteredData)
+        })
+
+        $("#wing-selector").on("change", function () {
+            //get selected wing
+            let selectedWing = $(this).val();
+            //filter schedule data based on the selected day
+            let filteredData = scheduleData.filter(function (schedule) {
+                return selectedWing === "allwings" || schedule.wing.includes(selectedWing)
+            })
+            populateTable(filteredData)
+        })
+
+        $("#kid-selector").on("change", function () {
+            //get selected wing
+            let selectedKid = $(this).val();
+            //filter schedule data based on the selected day
+            let filteredData = scheduleData.filter(function (schedule) {
+                return selectedKid === "all" || schedule.student.includes(selectedKid)
             })
             populateTable(filteredData)
         })
@@ -28,8 +48,9 @@ $(document).ready(function () {
             // Add the class name, teacher name, room number, and days to the row
             row += '<td>' + schedule.class_name + '</td>'
             row += '<td>' + schedule.teacher_name + '</td>'
-            row += '<td>' + schedule.room_number + '</td>'
+            row += '<td>' + schedule.wing + '</td>'
             row += '<td>' + schedule.days.join(', ') + '</td>'
+            row += '<td>' + schedule.student + '</td>'
             row += '</tr>'
             // Append the new row to the table body
             $('#schedule-table-body').append(row)
